@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error {
+    color: red;
+}
+
+.contenedor-contactos {
+    display: grid;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.nuevo-contacto {
+    background-color: green;
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    height: 50px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.nuevo-contacto:hover {
+    background-color: rgb(73, 167, 170);
+}

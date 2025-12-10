@@ -1,0 +1,60 @@
+.contenedor-article {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    align-items: center;
+    background: #f9f9f9;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.contenedor-datos {
+    flex: 1;
+}
+
+h3 {
+    margin: 0 0 8px;
+    font-size: 1.2rem;
+}
+
+p {
+    margin: 4px 0;
+}
+
+.contenedor-botones-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.boton-editar {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.boton-editar:hover {
+    background-color: #00ccff;
+}
+
+.boton-eliminar {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.boton-eliminar:hover {
+    background-color: #c1c41b;
+}
