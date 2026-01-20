@@ -50,8 +50,8 @@ export function AddContact() {
   };
 
   return (
-    <section>
-      <h2>{existing ? "Edit contact" : "New Contact"}</h2>
+    <section className="text-light">
+      <h2 className="text-success">{existing ? "Edit contact" : "New Contact"}</h2>
       <form onSubmit={onSubmit}>
         <label>
           <span> Full Name</span>
@@ -76,8 +76,8 @@ export function AddContact() {
         </label>
 
         <div className="contenedor-botones">
-          <button type="submit" className="boton-submit">{existing ? "Actualizar" : "Create"}</button>
-          <button type="button" onClick={() => navigate("/")} className="boton-cancelar">Cancel</button>
+          <button type="submit" className="btn btn-primary rounded-pill border border-light border-2">{existing ? "Actualizar" : "Create"}</button>
+          <button type="button" onClick={() => navigate("/")} class="btn btn-danger rounded-pill border border-light border-2">Cancel</button>
         </div>
       </form>
     </section>

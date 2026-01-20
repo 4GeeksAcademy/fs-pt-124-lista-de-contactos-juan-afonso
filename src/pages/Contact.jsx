@@ -15,8 +15,8 @@ export function Contact() {
   return (
     <section>
       <header>
-        <h2>Contacts</h2>
-        <button onClick={() => navigate("/add")} className="nuevo-contacto">New contact</button>
+        <h2 className="text-light">Contacts</h2>
+        <button type="button" onClick={() => navigate("/add")} class="btn btn-success rounded-pill border border-light border-2">New contact</button>
       </header>
 
       {loading && <p>Cargando...</p>}
@@ -26,7 +26,7 @@ export function Contact() {
         {list.length > 0 ? (
           list.map((c) => <ContactCard key={c.id} contact={c} />)
         ) : (
-          !loading && <p>No existing contacts yet!</p>
+          !loading && <p className="text-light">No existing contacts yet!</p>
         )}
       </div>
     </section>

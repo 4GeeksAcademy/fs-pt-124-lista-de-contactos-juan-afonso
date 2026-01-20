@@ -2,6 +2,7 @@ import { Outlet, Link } from "react-router-dom";
 import { useEffect } from "react";
 import useGlobalReducer from "../hooks/useGlobalReducer";
 import { ensureAgenda, getContacts } from "../services/Contacts";
+import { Navbar } from "../components/Navbar";
 
 export function Layout() {
   const { store, dispatch } = useGlobalReducer();
@@ -24,6 +25,7 @@ export function Layout() {
   return (
     <div>
       <main style={{ padding: 16 }}>
+        <Navbar />
         <Outlet />
       </main>
     </div>
